@@ -1,4 +1,4 @@
-package com.myname.mymodid;
+package net.junedev.viridium;
 
 import java.io.File;
 

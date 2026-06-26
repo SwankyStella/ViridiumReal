@@ -1,4 +1,4 @@
-package com.myname.mymodid;
+package net.junedev.viridium;
 
 public class ClientProxy extends CommonProxy {
 
