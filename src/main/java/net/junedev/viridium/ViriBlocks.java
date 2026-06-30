@@ -1,0 +1,49 @@
+package net.junedev.viridium;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.junedev.viridium.blocks.BaseFullLog;
+import net.junedev.viridium.items.blocks.baldCypressItem;
+import net.junedev.viridium.items.blocks.sycamoreItem;
+import net.minecraft.block.Block;
+
+public class ViriBlocks {
+
+    public void preInit() {
+        // Bushes
+
+        // Standalone Grasses
+
+        // Standalone Flora
+
+        // Mushrooms
+
+        // Grass Decorators
+
+        // Vines
+
+        // Wood
+        americanSycamoreLog = new BaseFullLog();
+        GameRegistry.registerBlock(americanSycamoreLog, sycamoreItem.class, "american_sycamore_log");
+
+        baldCypressLog = new BaseFullLog();
+        GameRegistry.registerBlock(baldCypressLog, baldCypressItem.class, "bald_cypress_log");
+    }
+
+    // Bushes
+
+    // Standalone Grasses
+
+    // Standalone Flora
+
+    // Mushrooms
+
+    // Grass Decorators
+
+    // Vines
+
+    // Wood
+    public static Block americanSycamoreLog;
+    public static Block baldCypressLog;
+
+
+}
