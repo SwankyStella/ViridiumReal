@@ -12,14 +12,14 @@ public class baldCypressItem extends ItemBlock {
         super(block);
 
     }
+
     @Override
     public String getUnlocalizedName(ItemStack stack) {
         return "item." + "bald_cypress_log";
     }
 
     @Override
-    public ItemBlock setUnlocalizedName(String name)
-    {
+    public ItemBlock setUnlocalizedName(String name) {
         this.unlocalizedName = name;
         return this;
     }
