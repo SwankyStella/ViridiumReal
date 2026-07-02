@@ -4,11 +4,11 @@ import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 
-public class sycamoreItem extends ItemBlock {
+public class sycamoreLogItem extends ItemBlock {
 
     private String unlocalizedName;
 
-    public sycamoreItem(Block block) {
+    public sycamoreLogItem(Block block) {
         super(block);
 
     }
