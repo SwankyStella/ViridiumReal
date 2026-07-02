@@ -1,10 +1,11 @@
 package net.junedev.viridium;
 
-import cpw.mods.fml.common.registry.GameRegistry;
 import net.junedev.viridium.blocks.BaseFullLog;
 import net.junedev.viridium.items.blocks.baldCypressItem;
 import net.junedev.viridium.items.blocks.sycamoreItem;
 import net.minecraft.block.Block;
+
+import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ViriBlocks {
 
@@ -44,6 +45,5 @@ public class ViriBlocks {
     // Wood
     public static Block americanSycamoreLog;
     public static Block baldCypressLog;
-
 
 }
