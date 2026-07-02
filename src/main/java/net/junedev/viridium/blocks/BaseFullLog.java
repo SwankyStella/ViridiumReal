@@ -39,6 +39,15 @@ public class BaseFullLog extends BlockLog {
         int l = meta & 3;
         return k == 0 && (side == 1 || side == 0) ? this.tops[l] : (k == 4 && (side == 5 || side == 4) ? this.tops[l]: (k == 8 && (side == 2 || side == 3) ? this.tops[l] : this.sides[l]));
     }
+
+    public int findLogName(String[] names) {
+        for (int i = 0; i < names.length; ++i) {
+            if (names[i].equals(getUnlocalizedName().substring(5))) {
+                return i;
+            }
+        }
+        return 0;
+    }
 }
 
 
