@@ -22,10 +22,10 @@ public class ViriBlocks {
         // Vines
 
         // Wood
-        americanSycamoreLog = new BaseFullLog();
+        americanSycamoreLog = new BaseFullLog().setBlockName("american_sycamore_log");
         GameRegistry.registerBlock(americanSycamoreLog, sycamoreItem.class, "american_sycamore_log");
 
-        baldCypressLog = new BaseFullLog();
+        baldCypressLog = new BaseFullLog().setBlockName("bald_cypress_log");
         GameRegistry.registerBlock(baldCypressLog, baldCypressItem.class, "bald_cypress_log");
     }
 
