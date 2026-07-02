@@ -73,6 +73,4 @@ public class ViriBlocks {
     public static Block sweetgumLog;
     public static Block weepingWillowLog;
 
-
-
 }

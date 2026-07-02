@@ -11,7 +11,9 @@ public class BaseFullLog extends BlockLog {
 
     public IIcon[] sides;
     public IIcon[] tops;
-    public String[] texNames = new String[] { "american_sycamore_log", "bald_cypress_log", "baobab_log", "black_pine_log", "dragons_blood_log", "royal_palm_log", "sierra_juniper_log", "sweetgum_log", "weeping_willow_log"  };
+    public String[] texNames = new String[] { "american_sycamore_log", "bald_cypress_log", "baobab_log",
+        "black_pine_log", "dragons_blood_log", "royal_palm_log", "sierra_juniper_log", "sweetgum_log",
+        "weeping_willow_log" };
 
     public BaseFullLog() {
         super();
@@ -39,7 +41,8 @@ public class BaseFullLog extends BlockLog {
 
         return orientation == 0 && (side == 1 || side == 0) ? this.tops[findLogName(texNames)]
             : (orientation == 4 && (side == 5 || side == 4) ? this.tops[findLogName(texNames)]
-                : (orientation == 8 && (side == 2 || side == 3) ? this.tops[findLogName(texNames)] : this.sides[findLogName(texNames)]));
+                : (orientation == 8 && (side == 2 || side == 3) ? this.tops[findLogName(texNames)]
+                    : this.sides[findLogName(texNames)]));
     }
 
     public int findLogName(String[] names) {
