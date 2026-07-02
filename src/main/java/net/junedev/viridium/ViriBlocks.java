@@ -1,17 +1,15 @@
 package net.junedev.viridium;
 
 import net.junedev.viridium.blocks.BaseFullLog;
-//import net.junedev.viridium.items.blocks.*;
 import net.junedev.viridium.items.blocks.baldCypressLogItem;
 import net.junedev.viridium.items.blocks.baobabLogItem;
 import net.junedev.viridium.items.blocks.blackPineLogItem;
-import net.junedev.viridium.items.blocks.sycamoreLogItem;
 import net.junedev.viridium.items.blocks.dragonsBloodLogItem;
 import net.junedev.viridium.items.blocks.royalPalmLogItem;
 import net.junedev.viridium.items.blocks.sierraJuniperLogItem;
 import net.junedev.viridium.items.blocks.sweetgumLogItem;
+import net.junedev.viridium.items.blocks.sycamoreLogItem;
 import net.junedev.viridium.items.blocks.weepingWillowLogItem;
-
 import net.minecraft.block.Block;
 
 import cpw.mods.fml.common.registry.GameRegistry;
