@@ -4,11 +4,10 @@ import net.minecraft.block.BlockLog;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.util.IIcon;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import org.apache.commons.lang3.ArrayUtils;
 
-import java.util.ArrayList;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class BaseFullLog extends BlockLog {
 
@@ -44,16 +43,13 @@ public class BaseFullLog extends BlockLog {
 
         switch (orientation) {
             case 0:
-                if (side == 1 || side == 0)
-                    return this.tops[findLogName(texNames)];
+                if (side == 1 || side == 0) return this.tops[findLogName(texNames)];
                 break;
             case 4:
-                if (side == 5 || side == 4)
-                    return this.tops[findLogName(texNames)];
+                if (side == 5 || side == 4) return this.tops[findLogName(texNames)];
                 break;
             case 8:
-                if (side == 2 || side == 3)
-                    return this.tops[findLogName(texNames)];
+                if (side == 2 || side == 3) return this.tops[findLogName(texNames)];
                 break;
         }
         return this.sides[findLogName(texNames)];
