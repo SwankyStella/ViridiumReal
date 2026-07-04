@@ -39,10 +39,21 @@ public class BaseFullLog extends BlockLog {
     public IIcon getIcon(int side, int meta) {
         int orientation = meta & 12;
 
-        return orientation == 0 && (side == 1 || side == 0) ? this.tops[findLogName(texNames)]
-            : (orientation == 4 && (side == 5 || side == 4) ? this.tops[findLogName(texNames)]
-                : (orientation == 8 && (side == 2 || side == 3) ? this.tops[findLogName(texNames)]
-                    : this.sides[findLogName(texNames)]));
+        switch (orientation) {
+            case 0:
+                if (side == 1 || side == 0)
+                    return this.tops[findLogName(texNames)];
+                break;
+            case 4:
+                if (side == 5 || side == 4)
+                    return this.tops[findLogName(texNames)];
+                break;
+            case 8:
+                if (side == 2 || side == 3)
+                    return this.tops[findLogName(texNames)];
+                break;
+        }
+        return this.sides[findLogName(texNames)];
     }
 
     public int findLogName(String[] names) {
