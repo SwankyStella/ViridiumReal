@@ -4,18 +4,18 @@ import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 
-public class weepingWillowLogItem extends ItemBlock {
+public class DragonsBloodLogItem extends ItemBlock {
 
     private String unlocalizedName;
 
-    public weepingWillowLogItem(Block block) {
+    public DragonsBloodLogItem(Block block) {
         super(block);
 
     }
 
     @Override
     public String getUnlocalizedName(ItemStack stack) {
-        return "item." + "weeping_willow_log";
+        return "item." + "dragons_blood_log";
     }
 
     @Override

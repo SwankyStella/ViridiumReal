@@ -1,15 +1,15 @@
 package net.junedev.viridium;
 
 import net.junedev.viridium.blocks.BaseFullLog;
-import net.junedev.viridium.items.blocks.baldCypressLogItem;
-import net.junedev.viridium.items.blocks.baobabLogItem;
-import net.junedev.viridium.items.blocks.blackPineLogItem;
-import net.junedev.viridium.items.blocks.dragonsBloodLogItem;
-import net.junedev.viridium.items.blocks.royalPalmLogItem;
-import net.junedev.viridium.items.blocks.sierraJuniperLogItem;
-import net.junedev.viridium.items.blocks.sweetgumLogItem;
-import net.junedev.viridium.items.blocks.sycamoreLogItem;
-import net.junedev.viridium.items.blocks.weepingWillowLogItem;
+import net.junedev.viridium.items.blocks.BaldCypressLogItem;
+import net.junedev.viridium.items.blocks.BaobabLogItem;
+import net.junedev.viridium.items.blocks.BlackPineLogItem;
+import net.junedev.viridium.items.blocks.DragonsBloodLogItem;
+import net.junedev.viridium.items.blocks.RoyalPalmLogItem;
+import net.junedev.viridium.items.blocks.SierraJuniperLogItem;
+import net.junedev.viridium.items.blocks.SweetgumLogItem;
+import net.junedev.viridium.items.blocks.SycamoreLogItem;
+import net.junedev.viridium.items.blocks.WeepingWillowLogItem;
 import net.minecraft.block.Block;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -31,31 +31,31 @@ public class ViriBlocks {
 
         // Wood
         americanSycamoreLog = new BaseFullLog().setBlockName("american_sycamore_log");
-        GameRegistry.registerBlock(americanSycamoreLog, sycamoreLogItem.class, "american_sycamore_log");
+        GameRegistry.registerBlock(americanSycamoreLog, SycamoreLogItem.class, "american_sycamore_log");
 
         baldCypressLog = new BaseFullLog().setBlockName("bald_cypress_log");
-        GameRegistry.registerBlock(baldCypressLog, baldCypressLogItem.class, "bald_cypress_log");
+        GameRegistry.registerBlock(baldCypressLog, BaldCypressLogItem.class, "bald_cypress_log");
 
         baobabLog = new BaseFullLog().setBlockName("baobab_log");
-        GameRegistry.registerBlock(baobabLog, baobabLogItem.class, "baobab_log");
+        GameRegistry.registerBlock(baobabLog, BaobabLogItem.class, "baobab_log");
 
         blackPineLog = new BaseFullLog().setBlockName("black_pine_log");
-        GameRegistry.registerBlock(blackPineLog, blackPineLogItem.class, "black_pine_log");
+        GameRegistry.registerBlock(blackPineLog, BlackPineLogItem.class, "black_pine_log");
 
         dragonsBloodLog = new BaseFullLog().setBlockName("dragons_blood_log");
-        GameRegistry.registerBlock(dragonsBloodLog, dragonsBloodLogItem.class, "dragons_blood_log");
+        GameRegistry.registerBlock(dragonsBloodLog, DragonsBloodLogItem.class, "dragons_blood_log");
 
         royalPalmLog = new BaseFullLog().setBlockName("royal_palm_log");
-        GameRegistry.registerBlock(royalPalmLog, royalPalmLogItem.class, "royal_palm_log");
+        GameRegistry.registerBlock(royalPalmLog, RoyalPalmLogItem.class, "royal_palm_log");
 
         sierraJuniperLog = new BaseFullLog().setBlockName("sierra_juniper_log");
-        GameRegistry.registerBlock(sierraJuniperLog, sierraJuniperLogItem.class, "sierra_juniper_log");
+        GameRegistry.registerBlock(sierraJuniperLog, SierraJuniperLogItem.class, "sierra_juniper_log");
 
         sweetgumLog = new BaseFullLog().setBlockName("sweetgum_log");
-        GameRegistry.registerBlock(sweetgumLog, sweetgumLogItem.class, "sweetgum_log");
+        GameRegistry.registerBlock(sweetgumLog, SweetgumLogItem.class, "sweetgum_log");
 
         weepingWillowLog = new BaseFullLog().setBlockName("weeping_willow_log");
-        GameRegistry.registerBlock(weepingWillowLog, weepingWillowLogItem.class, "weeping_willow_log");
+        GameRegistry.registerBlock(weepingWillowLog, WeepingWillowLogItem.class, "weeping_willow_log");
     }
 
     // Bushes

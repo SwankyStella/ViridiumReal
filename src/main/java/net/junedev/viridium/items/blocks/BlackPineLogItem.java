@@ -4,18 +4,18 @@ import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 
-public class sweetgumLogItem extends ItemBlock {
+public class BlackPineLogItem extends ItemBlock {
 
     private String unlocalizedName;
 
-    public sweetgumLogItem(Block block) {
+    public BlackPineLogItem(Block block) {
         super(block);
 
     }
 
     @Override
     public String getUnlocalizedName(ItemStack stack) {
-        return "item." + "sweetgum_log";
+        return "item." + "black_pine_log";
     }
 
     @Override

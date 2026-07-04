@@ -4,11 +4,11 @@ import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 
-public class baldCypressLogItem extends ItemBlock {
+public class BaldCypressLogItem extends ItemBlock {
 
     private String unlocalizedName;
 
-    public baldCypressLogItem(Block block) {
+    public BaldCypressLogItem(Block block) {
         super(block);
 
     }

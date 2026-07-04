@@ -4,18 +4,18 @@ import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 
-public class sycamoreLogItem extends ItemBlock {
+public class SierraJuniperLogItem extends ItemBlock {
 
     private String unlocalizedName;
 
-    public sycamoreLogItem(Block block) {
+    public SierraJuniperLogItem(Block block) {
         super(block);
 
     }
 
     @Override
     public String getUnlocalizedName(ItemStack stack) {
-        return "item." + "american_sycamore_log";
+        return "item." + "sierra_juniper_log";
     }
 
     @Override
