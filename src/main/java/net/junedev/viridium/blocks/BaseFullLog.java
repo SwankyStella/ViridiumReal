@@ -6,6 +6,9 @@ import net.minecraft.util.IIcon;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import org.apache.commons.lang3.ArrayUtils;
+
+import java.util.ArrayList;
 
 public class BaseFullLog extends BlockLog {
 
@@ -57,11 +60,6 @@ public class BaseFullLog extends BlockLog {
     }
 
     public int findLogName(String[] names) {
-        for (int i = 0; i < names.length; ++i) {
-            if (names[i].equals(getUnlocalizedName().substring(5))) {
-                return i;
-            }
-        }
-        return 0;
+        return ArrayUtils.indexOf(names, getUnlocalizedName().substring(5));
     }
 }
