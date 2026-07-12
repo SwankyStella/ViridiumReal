@@ -1,5 +1,6 @@
 package net.junedev.viridium.blocks;
 
+import net.junedev.viridium.Viridium;
 import net.minecraft.block.BlockLog;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.util.IIcon;
@@ -22,7 +23,7 @@ public class BaseFullLog extends BlockLog {
     public BaseFullLog() {
         super();
         this.setHardness(1.0F); // Hardness of vanilla logs?
-        // this.setCreativeTab TODO: Creative tab
+        this.setCreativeTab(Viridium.VTab);
         this.setStepSound(soundTypeWood);
     }
 
@@ -33,8 +34,8 @@ public class BaseFullLog extends BlockLog {
         this.tops = new IIcon[texNames.length];
 
         for (int i = 0; i < texNames.length; ++i) {
-            this.sides[i] = register.registerIcon("viridium:" + texNames[i] + "_side");
-            this.tops[i] = register.registerIcon("viridium:" + texNames[i] + "_top");
+            this.sides[i] = register.registerIcon(Viridium.MOD_ID + ":" + texNames[i] + "_side");
+            this.tops[i] = register.registerIcon(Viridium.MOD_ID + ":" + texNames[i] + "_top");
         }
     }
 
