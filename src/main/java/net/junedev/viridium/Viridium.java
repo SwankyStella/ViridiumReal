@@ -17,6 +17,7 @@ public class Viridium {
 
     public static final String MOD_ID = "viridium";
     public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
+    public static final ViriTab VTab = new ViriTab("VTab");
 
     @SidedProxy(clientSide = "net.junedev.viridium.ClientProxy", serverSide = "net.junedev.viridium.CommonProxy")
     public static CommonProxy proxy;
