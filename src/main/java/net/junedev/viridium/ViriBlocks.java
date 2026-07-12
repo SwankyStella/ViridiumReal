@@ -142,13 +142,22 @@ public class ViriBlocks {
 
     // Wood
     public static Block americanSycamoreLog;
+    public static Block americanSycamorePlanks;
     public static Block baldCypressLog;
+    public static Block baldCypressPlanks;
     public static Block baobabLog;
+    public static Block baobabPlanks;
     public static Block blackPineLog;
+    public static Block blackPinePlanks;
     public static Block dragonsBloodLog;
+    public static Block dragonsBloodPlanks;
     public static Block royalPalmLog;
+    public static Block royalPalmPlanks;
     public static Block sierraJuniperLog;
+    public static Block sierraJuniperPlanks;
     public static Block sweetgumLog;
+    public static Block sweetgumPlanks;
     public static Block weepingWillowLog;
+    public static Block weepingWillowPlanks;
 
 }
