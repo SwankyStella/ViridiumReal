@@ -166,6 +166,8 @@ public class ViriBlocks {
     public static Block driftwoodPlanks;
 
     public static Block royalPalmLog;
+    public static Block royalPalmCrown;
+    public static Block royalPalmLeaves;
     public static Block royalPalmPlanks;
     public static Block sierraJuniperLog;
     public static Block sierraJuniperLogStripped;
