@@ -13,9 +13,11 @@ public class BaseFullLog extends BlockLog {
 
     public IIcon[] sides;
     public IIcon[] tops;
-    public String[] texNames = new String[] { "american_sycamore_log", "bald_cypress_log", "baobab_log",
-        "black_pine_log", "dragons_blood_log", "royal_palm_log", "sierra_juniper_log", "sweetgum_log",
-        "weeping_willow_log" };
+    public String[] texNames = new String[] { "american_sycamore_log", "american_sycamore_stripped", "bald_cypress_log",
+        "bald_cypress_stripped", "baobab_log", "baobab_stripped", "black_pine_log", "black_pine_stripped",
+        "dragons_blood_log", "dragons_blood_stripped", "royal_palm_log", "royal_palm_crown", "sierra_juniper_log",
+        "sierra_juniper_stripped", "sweetgum_log", "sweetgum_stripped", "weeping_willow_log", "weeping_willow_stripped",
+        "driftwood_log" };
 
     public BaseFullLog() {
         super();
