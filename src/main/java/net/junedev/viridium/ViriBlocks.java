@@ -151,6 +151,10 @@ public class ViriBlocks {
     public static Block blackPinePlanks;
     public static Block dragonsBloodLog;
     public static Block dragonsBloodPlanks;
+
+    public static Block driftwoodLog;
+    public static Block driftwoodPlanks;
+
     public static Block royalPalmLog;
     public static Block royalPalmPlanks;
     public static Block sierraJuniperLog;
