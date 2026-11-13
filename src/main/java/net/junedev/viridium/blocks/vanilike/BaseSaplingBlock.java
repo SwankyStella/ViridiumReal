@@ -24,8 +24,8 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class BaseSaplingBlock extends BlockSapling {
 
-    private final String treeId;
-    private final WoodBlockSet blockSet;
+    protected final String treeId;
+    protected final WoodBlockSet blockSet;
     private final String leafVariant;
 
     public BaseSaplingBlock(String treeId, WoodBlockSet blockSet) {

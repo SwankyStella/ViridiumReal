@@ -81,6 +81,15 @@ public final class TreeRegistry {
                 tree);
     }
 
+    public static WorldGenerator createGenerator2(String treeId, WoodBlockSet blockSet, SaplingLayout layout, boolean notifiesNeighbors) {
+        TreeType tree = TREES.get(treeId);
+        return tree == null ? createSeedlingGenerator(blockSet, notifiesNeighbors)
+            : configureSoil(
+            tree.layoutFactories.getOrDefault(layout, tree.defaultFactory)
+                .apply(notifiesNeighbors),
+            tree);
+    }
+
     public static boolean hasLayout(String treeId, SaplingLayout layout) {
         TreeType tree = TREES.get(treeId);
         return tree != null && tree.layoutFactories.containsKey(layout);
@@ -88,6 +97,10 @@ public final class TreeRegistry {
 
     private static WorldGenerator createDefaultGenerator(WoodBlockSet blockSet, boolean notifiesNeighbors) {
         return new LargeDeciduousTreeGen(notifiesNeighbors, blockSet, "", 8, 4, 0.30D, 2, 4, 8, 6);
+    }
+
+    private static WorldGenerator createSeedlingGenerator(WoodBlockSet blockSet, boolean notifiesNeighbors) {
+        return new SeedlingTreeGen(notifiesNeighbors, blockSet);
     }
 
     public static boolean isValidSoil(String treeId, Block soil) {
